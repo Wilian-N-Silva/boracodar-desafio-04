@@ -1,0 +1,36 @@
+.message-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 50%;
+
+    & .message {
+        padding: 14px;
+    }
+
+    &.incoming {
+        align-self: flex-start;
+
+
+        &+& {
+            & .info {
+                color: red;
+            }
+        }
+
+        & .message {
+            background-color: $color-message-incoming;
+            border-radius: 0px 8px 8px 8px;
+        }
+    }
+
+
+    &.outgoing {
+        align-self: flex-end;
+
+        & .message {
+            background-color: $color-message-outgoing;
+            border-radius: 8px 8px 0px 8px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/*
+    Font shorthand 
+        font: font-style font-variant font-weight font-size/line-height font-family;
+
+    font-weight references:
+        Thin                - 100
+        ExtraLight          - 200
+        Light               - 300
+        Regular             - 400
+        Medium              - 500
+        SemiBold            - 600
+        Bold                - 700
+        ExtraBold           - 800
+        Black               - 900
+*/
+
+
+$body: 400 12px/14px $font-family;
+$name: 700 16px/19px $font-family;
+$status: 400 12px/14px $font-family;

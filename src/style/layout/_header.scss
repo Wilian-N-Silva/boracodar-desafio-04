@@ -1,0 +1,69 @@
+header {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    & .profile {
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+
+        & .avatar {
+            width: 48px;
+            height: 48px;
+
+            & img {
+                border-radius: 50%;
+            }
+        }
+
+        & .headline {
+            flex: 1;
+            cursor: default;
+
+            & .name {
+                font: $name;
+            }
+
+            & .status {
+                display: flex;
+                opacity: 0;
+                max-height: 0;
+                align-items: center;
+                transition: .1s;
+                gap: 8px;
+                margin-top: 4px;
+
+                & span {
+                    color: $color-status-online;
+                    font: $status;
+                }
+
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $color-status-online;
+                    border-radius: 50%;
+                }
+
+                &.online {
+                    opacity: 1;
+                    max-height: none;
+                }
+            }
+        }
+    }
+
+
+    & .trailing {
+        & .button {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

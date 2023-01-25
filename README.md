@@ -1,4 +1,4 @@
-<h1 align="center"><b>#boraCodar</b> {nome do desafio} </h1>
+<h1 align="center"><b>#boraCodar</b> um chat </h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -14,22 +14,25 @@
 <br>
 
 <p align="center">
-  <img alt="Um card de produto" src=".github/preview.jpg" width="100%">
+  <img alt="A imagem mostra a foto de um chat feito para o desafio Bora Codar" src=".github/preview.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- Tecnologia
+- ReactJS e Typescript
+- TSX e SASS
+- Vite
+- Git e Github
 
 ## 💻 Projeto
 
-{Descrição}
+O desafio "um chat" é o quarto projeto da série de desafios #boraCodar da Rocketseat!
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](link). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1200070743637495660). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## 📝 Licença
 

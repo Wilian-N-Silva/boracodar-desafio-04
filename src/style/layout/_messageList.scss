@@ -1,0 +1,22 @@
+.message-list {
+    flex: 1;
+    margin: 14px 0 30px;
+    overflow-y: auto;
+
+    & ul {
+        gap: 30px;
+        flex: 1;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    & {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}

@@ -1,0 +1,18 @@
+body {
+    color: $color-texts;
+    background-color: $color-background;
+    font: $body;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    padding: $padding;
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .container {
+        padding: $padding-lg;
+    }
+}
