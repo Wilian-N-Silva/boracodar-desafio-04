@@ -14,7 +14,7 @@
 <br>
 
 <p align="center">
-  <img alt="A imagem mostra a foto de um chat feito para o desafio Bora Codar" src=".github/preview.jpg" width="100%">
+  <img alt="A imagem mostra a foto de um chat feito para o desafio Bora Codar" src=".github/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
