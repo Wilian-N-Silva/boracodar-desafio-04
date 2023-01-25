@@ -1,4 +1,5 @@
 import clsx from "clsx"
+import parse from 'html-react-parser';
 
 interface MessageItemProps {
     senderId: number
@@ -8,6 +9,11 @@ interface MessageItemProps {
 }
 
 export function MessageItem(message: MessageItemProps) {
+    const boldTextExp = /(\*\*)(.*?)(\*\*)/g
+    const boldTextSubstitution = '<b>$2</b>'
+
+    const messageBody = message.body.replace(boldTextExp, boldTextSubstitution)
+
     const date = new Date(Date.parse(message.timestamp))
 
     return (
@@ -18,10 +24,11 @@ export function MessageItem(message: MessageItemProps) {
             <div className="info">{
                 `${message.senderId === 123456 ?
                     "Você" :
-                    message.senderName} - ${date.toLocaleTimeString('pt-br', { hour: "numeric", minute: "2-digit" })}`
+                    message.senderName
+                } - ${date.toLocaleTimeString('pt-br', { hour: "numeric", minute: "2-digit" })} `
             }
             </div>
-            <div className="message">{message.body}</div>
+            <div className="message">{parse(messageBody)}</div>
         </li>
     )
 }

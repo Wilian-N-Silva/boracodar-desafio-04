@@ -28,12 +28,11 @@ export function MessageList() {
                     timestamp={new Date('2023-01-25T11:34:00').toString()}
                     body="E se a gente fizesse um chat moderno e responsivo em apenas uma semana?"
                 />
-
                 <MessageItem
                     senderId={123456}
                     senderName="Meu nome"
                     timestamp={new Date('2023-01-25T11:36:00').toString()}
-                    body="#boraCodar! 🚀"
+                    body="**#boraCodar**! 🚀"
                 />
 
             </ul>
