@@ -1,9 +1,15 @@
 import { MessageItem } from "./MessageItem";
+import { TimestampItem } from "./TimestampItem";
 
 export function MessageList() {
     return (
         <div className="message-list">
             <ul>
+
+                <TimestampItem
+                    timestamp={new Date('2023-01-25T11:30:00').toString()}
+                />
+
                 <MessageItem
                     senderId={654231}
                     senderName="Cecilia Sassaki"
@@ -29,6 +35,7 @@ export function MessageList() {
                     timestamp={new Date('2023-01-25T11:36:00').toString()}
                     body="#boraCodar! 🚀"
                 />
+
             </ul>
         </div>
     )
